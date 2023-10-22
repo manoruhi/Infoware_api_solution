@@ -20,6 +20,8 @@ const pool = mysql.createPool({
     port: 3306
 });
 
+console.log(pool)
+
 // CREATE EMPLOYEE OPERATION
 app.post('/create_employee', (req, res) => {
     const { full_name, job_title, phone_no, email, address, city, state, primary_name, primary_contact, primary_relation, secondary_name, secondary_contact, secondary_relation } = req.query;
